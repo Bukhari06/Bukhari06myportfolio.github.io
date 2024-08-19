@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+.portfolio-container{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    
+    
+}
+.navlist{
+    display: flex;
+    gap: 3.5rem;
+    height: 15vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    
+}
+.navlist li{
+    list-style: none;
+}
+
+.navlist li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-style: italic;
+    color:  white;
+    position: relative;    
+}
+
+.left-container, .right-container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+
+}
+.left-container{
+background: black;
+width: 70%;
+padding-left: 3rem;
+}
+.right-container{
+background: linear-gradient(-45deg, #3877ff, #262525 70%);
+width: 30%;
+}
+.icons .fa-brands{
+    color: white;
+    font-size: 1.7rem;
+}
+.icons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+.content {
+    margin-left: 2rem;
+}
+.content .intro{
+    color: rgb(201, 80, 150);
+
+}
+.content .intro span{
+color: purple;
+}
+
+.content h6{
+    font-size: 2rem;
+    color: rgb(201, 80, 150);  
+}
+.content h1{
+    color: rgb(110, 74, 95); 
+}
+.content .detail{
+    -webkit-flow-into: 1.1rem;
+    color: white;
+    max-width: 38rem;
+    margin: 1.1rem 0 3rem 0;
+    line-height: 1.1rem;
+    
+}
+.btn-container button{
+    border-radius: 1.5rem solid purple;
+    font-size: 1.1rem;
+    padding: .7rem 1.5rem;
+    border-radius: .4rem;
+    cursor: pointer;
+    transition: .5S ease;
+}
+button:nth-child(1){
+    background: rgb(203, 167, 240);
+    color: yellowgreen;
+    }
+button:nth-child(2){
+background: rgb(203, 167, 240);
+color: yellowgreen;
+margin-left: 2rem; 
+}
+button:nth-child(1):hover{
+background: transparent;
+color: rgb(201, 80, 150);
+border: 0rem;
+}
+button:nth-child(2):hover{
+background: transparent;
+color: rgb(201, 80, 150);
+border: 0rem;
+
+
+}
+ .icons .fa-brands:hover{
+ cursor: pointer;
+ background: linear-gradient(pink, #3877ff);
+ -webkit-background-clip: text;
+ -webkit-text-fill-color: purple;
+ }
+ .design .circle{
+    aspect-ratio: 1;
+    position: absolute;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+transform: translate(-50%, -50%);
+
+ }
+ .circle:nth-child(1){
+    background: linear-gradient(90degree, yellow 50%, grey 50%);
+    width: 38rem;
+ }
+ .circle:nth-child(2){
+    width: 30rem;
+    background-image: url("image/pic.bmp");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border: .1rem solid white;
+    box-shadow: 
+    0 0  2rem #fff,
+    inset 0 0 1rem #fff,
+    0 0 1rem #fff,
+    inset 0 .1rem #fff,
+    0 0 2rem #3877ff,
+    inset 0 0 2rem #3877ff;
+
+ }
+ .navlist li a::after, .navlist .active::after{
+    content: "";
+    position: absolute;
+    background: white;
+    width: 100%;
+    height: 0.1rem;
+    left: 0;
+    bottom: -5px;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform .5s;
+ }
+ .navlist li a:hover::after, .navlist .active::after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+ }
